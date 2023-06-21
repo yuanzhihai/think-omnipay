@@ -99,12 +99,12 @@ class OmnipayManager
 
     protected function getDefault()
     {
-        return $this->app->config['omnipay.default'];
+        return $this->app->config->get('omnipay.default');
     }
 
     protected function getConfig($name)
     {
-        return $this->app->config["omnipay.gateways.{$name}"];
+        return $this->app->config->get("omnipay.gateways.{$name}");
     }
 
     public function getGateway()

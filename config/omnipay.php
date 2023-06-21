@@ -8,7 +8,7 @@ return [
     | Here you can specify the gateway that the facade should use by default.
     |
     */
-    'gateway'  => env( 'OMNIPAY_GATEWAY','PayPal_Express' ),
+    'default'  => 'paypal',
 
 
     /*

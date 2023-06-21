@@ -9,8 +9,8 @@ class Service extends \think\Service
 
     public function register()
     {
-        $this->app->bind( 'omnipay',function ($app) {
-            return new OmnipayManager( $app,new GatewayFactory );
+        $this->app->bind( 'omnipay',function () {
+            return new OmnipayManager( $this->app,new GatewayFactory );
         } );
     }
 

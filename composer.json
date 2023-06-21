@@ -29,10 +29,5 @@
         "captcha": "config/omnipay.php"
       }
     }
-  },
-  "config": {
-    "allow-plugins": {
-      "php-http/discovery": false
-    }
   }
 }

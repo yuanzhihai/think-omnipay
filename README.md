@@ -12,7 +12,7 @@ Include the laravel-omnipay package as a dependency in your `composer.json`:
 
     composer require yzh52521/think-omnipay
 
-**Note:** You don't need to include the `omnipay/common` in your composer.json - it has already been included `laravel-omnipay`.
+**Note:** You don't need to include the `omnipay/common` in your composer.json - it has already been included `think-omnipay`.
 
 ### Install Required Providers
 
@@ -27,7 +27,6 @@ Alternatively you can include every gateway by the following:
 **Note:** this requires a large amount of composer work as it needs to fetch each seperate repository. This is not recommended.
 
 ## Configuration
-
 
 #### PayPal Express Example
 Here is an example of how to configure password, username and, signature with paypal express checkout driver

@@ -1,0 +1,38 @@
+{
+  "name": "yzh52521/laravel-omnipay",
+  "description": "Integrates Omnipay with thinkphp and provides an easy configuration.",
+  "keywords": ["omnipay", "payments", "thinkphp"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "yzh52521",
+      "email": "396751927@qq.com"
+    }
+  ],
+  "require": {
+    "php": "^7.2.5|^8.0",
+    "topthink/framework": "^6.0",
+    "guzzlehttp/guzzle": "^6.0|^7.0",
+    "omnipay/common": "^3.0"
+  },
+  "autoload": {
+    "psr-0": {
+      "yuan\\ThinkOmnipay": "src/"
+    }
+  },
+  "extra": {
+    "think": {
+      "services": [
+        "yuan\\ThinkOmnipay\\Service"
+      ],
+      "config": {
+        "captcha": "config/omnipay.php"
+      }
+    }
+  },
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": false
+    }
+  }
+}

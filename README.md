@@ -93,7 +93,7 @@ dd($response->getMessage());
 In addition you can make an instance of the gateway.
 
 ```php
-$gateway = \ThinkOmnipay\Facade::gatGateway('paypal');
+$gateway = \ThinkOmnipay\Facade::gateway('paypal');
 ```
 
 ## License

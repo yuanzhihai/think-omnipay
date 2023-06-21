@@ -16,14 +16,14 @@
     "omnipay/common": "^3.0"
   },
   "autoload": {
-    "psr-0": {
-      "yuan\\ThinkOmnipay": "src/"
+    "psr-4": {
+      "ThinkOmnipay": "src/"
     }
   },
   "extra": {
     "think": {
       "services": [
-        "yuan\\ThinkOmnipay\\Service"
+        "ThinkOmnipay\\Service"
       ],
       "config": {
         "omnipay": "config/omnipay.php"

@@ -1,6 +1,6 @@
 <?php
 
-namespace yuan\ThinkOmnipay;
+namespace ThinkOmnipay;
 
 use Omnipay\Common\CreditCard;
 use Omnipay\Common\Helper;

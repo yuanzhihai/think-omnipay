@@ -63,9 +63,9 @@ $cardInput = [
 	'cvv'         => '333',
 ];
 
-$card = Omnipay::creditCard($cardInput);
+$card = \yuan\ThinkOmnipay\Facade::creditCard($cardInput);
 
-$response = Omnipay::purchase([
+$response = \yuan\ThinkOmnipay\Facade::purchase([
 	'amount'    => '100.00',
 	'returnUrl' => 'http://bobjones.com/payment/return',
 	'cancelUrl' => 'http://bobjones.com/payment/cancel',
@@ -80,9 +80,9 @@ This will use the gateway specified in the config as `default`.
 However, you can also specify a gateway to use.
 
 ```php
-Omnipay::setGateway('paypal');
+\yuan\ThinkOmnipay\Facade::setGateway('paypal');
 
-$response = Omnipay::purchase([
+$response = \yuan\ThinkOmnipay\Facade::purchase([
 	'amount' => '100.00',
 	'card'   => $cardInput
 ])->send();
@@ -93,7 +93,7 @@ dd($response->getMessage());
 In addition you can make an instance of the gateway.
 
 ```php
-$gateway = Omnipay::gateway('paypal');
+$gateway = \yuan\ThinkOmnipay\Facade::gatGateway('paypal');
 ```
 
 ## License

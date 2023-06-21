@@ -4,6 +4,12 @@ namespace yuan\ThinkOmnipay;
 
 use Omnipay\Common\CreditCard;
 
+
+/**
+ * @method  OmnipayManager setGateway()
+ * @method  OmnipayManager getGateway()
+ * @method  \Omnipay\Common\GatewayInterface purchase( array $options = array() )
+ */
 class Facade extends \think\Facade
 {
     /**

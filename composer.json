@@ -1,5 +1,5 @@
 {
-  "name": "yzh52521/laravel-omnipay",
+  "name": "yzh52521/think-omnipay",
   "description": "Integrates Omnipay with thinkphp and provides an easy configuration.",
   "keywords": ["omnipay", "payments", "thinkphp"],
   "license": "MIT",
